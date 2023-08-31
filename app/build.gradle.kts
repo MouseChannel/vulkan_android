@@ -15,10 +15,10 @@ android {
 
 
 
-    namespace = "com.example.nativecpp"
+    namespace = "com.mousechannel.mousechannel"
     compileSdk = 33
     defaultConfig {
-        applicationId = "com.example.nativecpp"
+        applicationId = "com.mousechannel.mousechannel"
         minSdk = 24
         targetSdk = 33
         versionCode = 1

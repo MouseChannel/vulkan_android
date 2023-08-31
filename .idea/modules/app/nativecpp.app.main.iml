@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="AdditionalModuleElements">
+    <content url="file://$MODULE_DIR$/../../../app">
+      <sourceFolder url="file://$MODULE_DIR$/../../../app" type="native-header-root" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/src/main" type="native-header-root" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/src/main/include" type="native-header-root" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/src/main/include/Tool" type="native-header-root" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/src/main/include/vulkan_header" type="native-header-root" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../app/.cxx" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../app/.externalNativeBuild" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../app/Include">
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/Include" type="native-header-root" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../app/Include/glm/detail">
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/Include/glm/detail" type="native-Source-root" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../nativecpp/app">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../nativecpp/app" type="native-Source-root" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../app/src/main" dumb="true">
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/src/main/cpp" type="native-Source-root" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/src/main/src" type="native-Source-root" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/src/main/include/vulkan_header/glm/detail" type="native-Source-root" />
+    </content>
+  </component>
+</module>

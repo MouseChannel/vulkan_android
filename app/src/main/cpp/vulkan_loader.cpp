@@ -11,6 +11,8 @@
 #include <initializer_list>
 #include <string>
 #include <android/log.h>
+//#include "Rendering/Context.hpp"
+
 
 static const char *kTAG = "mocheng";
 #define LOGE(...) \
@@ -99,6 +101,10 @@ private:
 };
 
 void VulkanLoader::Init(android_app *app) {
+    {
+//        Context::Get_Singleton()->Init_Vulkan(window);
+    }
+
     m_app = app;
     init_instance();
     init_surface(app->window);
