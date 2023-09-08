@@ -87,6 +87,10 @@ void Context::Init_Vulkan(std::shared_ptr<Window> window)
 }
 #endif
 
+void Init_Imgui(){
+
+}
+
 void Context::Init()
 {
     instance.reset(new Instance);

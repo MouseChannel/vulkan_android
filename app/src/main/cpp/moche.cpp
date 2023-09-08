@@ -14,12 +14,27 @@
 //#include "Helper/ImGui_Context.hpp"
 #include "Rendering/Context.hpp"
 #include "Wrapper/Device.hpp"
-
+#include "imgui/imgui.h"
+//#include "vulkan/v
 extern "C" {
 android_app *app;
 std::shared_ptr<VulkanLoader> vulkan_loader;
 bool isready = false;
+class CommandBuffer;
+class Window;
+class ImGuiContext {
+public:
+    ImGuiContext();
+    ~ImGuiContext();
+    void Init(std::shared_ptr<Window> window);
+    void Update(std::shared_ptr<CommandBuffer> cmd);
 
+private:
+    vk::DescriptorPool descriptor_pool;
+    void create_descriptor_pool();
+    ImGuiIO io;
+};
+}
 void initVulkan(android_app *pApp);
 void terminate();
 void handle_cmd(android_app *pApp, int32_t cmd) {
@@ -57,9 +72,7 @@ void android_main(struct android_app *pApp) {
                 pSource->process(pApp, pSource);
             }
         }
-//        if (vulkan_loader->isready) {
-//            vulkan_loader->Render_Loop();
-//        }
+
         if (isready) {
             MoCheng3D::Context::Get_Singleton()->BeginFrame();
             MoCheng3D::Context::Get_Singleton()->EndFrame();
